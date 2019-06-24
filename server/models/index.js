@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.set("debug", true); //debugger information sent to term
+mongoose.set("debug", true); //debugger information sent to terminal
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/voting", { useNewUrlParser: true });
 

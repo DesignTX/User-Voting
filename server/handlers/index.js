@@ -1,6 +1,8 @@
 module.exports = {
-  ...require("./auth")
+  ...require("./auth"),
   //spreads out all the individual handlers inside our /auth
+  ...require("./poll")
+  //refering to handlers/poll.js
 };
 
 module.exports.errors = (err, req, res, next) => {
